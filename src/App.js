@@ -5,14 +5,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="content">
+        <div className="header-section">
+          <img id="logo" src={logo} alt="logo.png"/>
+          <h1>Hello World New!</h1>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h3>This app is created by Anjo Serohijos</h3>
       </div>
     );
   }
