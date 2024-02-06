@@ -1,0 +1,14 @@
+html, body{
+    height: 1000px;
+}
+
+.dashboard-content{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(84, 112, 206);
+    
+}
+
+h1{
+    color: orange;
+}
