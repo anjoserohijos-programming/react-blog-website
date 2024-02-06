@@ -1,9 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminDashboard from "./client/pages/admin_dashboard/app";
+import LoginPage from "./client/pages/login/app";
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AdminDashboard />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="login" element={<LoginPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
