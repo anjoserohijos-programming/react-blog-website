@@ -18,7 +18,42 @@
   font-size: large;
 }
 
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.ProfileCard{
+  background-color: green;
+}
+.ProfileCard:hover{
+  background-color: none;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9ece88;
+}
+.form-fields{
+  
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card{
+  padding: 20px;
+  margin: 5px;
+  width: 400px;
+  height: 200px;
 }
